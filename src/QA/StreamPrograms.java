@@ -21,13 +21,13 @@ public class StreamPrograms {
 		// 3. Java program to find first non-repeat element from a given string
 		question3();
 
-		// 4. Java program to find second highest number from given array e.g:- {5,9,11, 2,8,21,1};
+		// 4. Java program to find second-highest number from given array e.g:- {5, 9, 11, 2, 8, 21, 1}
 		question4();
 
 		// 5. Java program to find longest string from given array e.g:- {"java", "C", "Rubi", "springboot", "microservices"};
 		question5();
 
-		// 6. Java program to find all elements from array who starts with 1 e.g:- {5,9,11,2,8,21,1};
+		// 6. Java program to find all elements from array who starts with 1 e.g:- {5, 9, 11, 2, 8, 21, 1}
 		question6();
 
 		// 7. String.join() method
@@ -74,12 +74,12 @@ public class StreamPrograms {
 		print("First repeat element :: " + repeat);
 	}
 
-	// 4. Java program to find second highest number from given array e.g:- {5,9,11, 2,8,21,1};
+	// 4. Java program to find second-highest number from given array e.g:- {5, 9, 11, 2, 8, 21, 1}
 	private static void question4() {
 
 		int[] numbers = {5, 9, 11, 2, 8, 21, 1};
 
-		// Second highest number
+		// Second-highest number
 		print(Arrays.stream(numbers).boxed().sorted(Comparator.reverseOrder()).skip(1).findFirst().get());
 	}
 
@@ -91,7 +91,7 @@ public class StreamPrograms {
 		print(Arrays.stream(names).reduce((word1, word2) -> word1.length() > word2.length() ? word1 : word2).get());
 	}
 
-	// 6. Java program to find all elements from array who starts with 1 e.g:- {5,9,11,2,8,21,1};
+	// 6. Java program to find all elements from array who starts with 1 e.g:- {5, 9, 11, 2, 8, 21, 1}
 	private static void question6() {
 
 		int[] numbers = {5, 9, 11, 2, 8, 21, 1};

@@ -6,12 +6,8 @@ import java.util.stream.Collectors;
 public class StringPrograms {
 
 	public static void main(String[] args) {
-
-		// Count Frequency of the characters
-		q1();
-
-		// Count Occurrence of given character
-		q2();
+		q1(); // Count Frequency of the characters?
+		q2(); // Count Occurrence of characters?
 	}
 
 	private static void q1() {
@@ -27,7 +23,6 @@ public class StringPrograms {
 	private static void q2() {
 
 		char find = '4';
-
 		long count = "1234455688"
 				.chars()
 				.mapToObj(i -> (char) i)
